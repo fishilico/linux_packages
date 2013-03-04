@@ -1,0 +1,5 @@
+# List of common packages for an ArchLinux desktop system
+
+# Wireless support
+wpa_actiond
+wireless_tools

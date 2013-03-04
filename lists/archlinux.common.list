@@ -1,0 +1,23 @@
+# List of common packages among every installation of ArchLinux
+
+# The base tools
+base
+
+# AUR tools (bootstrap of yaourt: download Tar & makepkg -si)
+yaourt
+namcap
+
+# Old networking toolset (ifconfig, route, ...)
+net-tools
+
+# Cron
+!cronie
+!cron
+dcron
+
+# Use GRUB 2, not GRUB
+!grub
+grub-bios
+
+# Root access
+sudo
