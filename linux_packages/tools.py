@@ -18,12 +18,25 @@ def process_output(*args):
     return [l for l in lines if l]
 
 
-def call_once_and_cache(f):
+def object_call_once_and_cache(f):
     """Only call once this function and cache its result for future use"""
 
     @wraps(f)
-    def wrapper(*args, **kwds):
-        if not hasattr(f, '_retval'):
-            f._retval = f(*args, **kwds)
-        return f._retval
+    def wrapper(self):
+        retkey = '_retval_' + f.__name__
+        if not hasattr(self, retkey):
+            setattr(self, retkey, f(self))
+        return getattr(self, retkey)
+    return wrapper
+
+
+def object_call_indexed_value(f):
+    """Only call this function once per argument value, caching result"""
+
+    @wraps(f)
+    def wrapper(self, arg):
+        retkey = '_retval_' + f.__name__ + '__' + str(arg)
+        if not hasattr(self, retkey):
+            setattr(self, retkey, f(self, arg))
+        return getattr(self, retkey)
     return wrapper

@@ -8,7 +8,7 @@ import os.path
 import sys
 
 from .pkglists import expand_groups, expand_deps
-from .tools import call_once_and_cache
+from .tools import object_call_once_and_cache, object_call_indexed_value
 
 
 class UnsupportedSystem(Exception):
@@ -57,23 +57,24 @@ class LinuxSystem(object):
         return getattr(self.module, fctname)(*args, **kwds)
 
     @property
-    @call_once_and_cache
+    @object_call_once_and_cache
     def installed_packages(self):
         """Set of all installed packages"""
         return self._call_module('get_installed_packages')
 
     @property
-    @call_once_and_cache
+    @object_call_once_and_cache
     def installed_groups(self):
         """Dict of all installed package groups"""
         return self._call_module('get_installed_groups')
 
     @property
-    @call_once_and_cache
+    @object_call_once_and_cache
     def all_groups(self):
         """Set of all package groups"""
         return self._call_module('get_all_groups')
 
+    @object_call_indexed_value
     def get_group_packages(self, group):
         """Get a set of packages of specified group"""
         try:
@@ -89,11 +90,12 @@ class LinuxSystem(object):
         return self._call_module('get_group_packages', group)
 
     @property
-    @call_once_and_cache
+    @object_call_once_and_cache
     def installed_virtual_packets(self):
         """Get dict of virtual packets"""
         return self._call_module('get_installed_virtual_packets')
 
+    @object_call_indexed_value
     def get_real_package(self, package):
         """Get real package name for virtual packages"""
         try:
@@ -107,11 +109,12 @@ class LinuxSystem(object):
             return package
 
     @property
-    @call_once_and_cache
+    @object_call_once_and_cache
     def _installed_deps(self):
         """Dict of all installed package dependencies"""
         return self._call_module('get_installed_deps')
 
+    @object_call_indexed_value
     def get_deps(self, package):
         """Get the dependencies of a package"""
         try:
