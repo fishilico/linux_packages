@@ -4,6 +4,7 @@
 base-devel
 # Use multilib to do 32-bits compiling on 64-bits machine
 multilib-devel
+clang
 
 # C++ libraries
 boost-build
@@ -21,6 +22,7 @@ pylint
 3to2
 python-distribute
 python-pip
+python-pyopenssl
 python2-distribute
 python2-pip
 python2-unittest2
@@ -43,7 +45,7 @@ apache-ant
 
 # Java
 jdk7-openjdk
-icedtea-web
+icedtea-web-java7
 !java-environment
 !java-runtime
 
@@ -73,7 +75,7 @@ ocaml
 #bug-buddy
 
 # ASM 8086 compiler and rewrite of NASM
-#bin86
+bin86
 #yasm
 
 # TCL window toolkit

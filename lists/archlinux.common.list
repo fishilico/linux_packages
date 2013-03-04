@@ -39,7 +39,7 @@ screen
 tmux
 
 # Text editors
-ed
+#ed
 emacs
 vim
 
@@ -65,7 +65,9 @@ net-tools
 traceroute
 
 # System tools
+ethtool
 hddtemp
+hdparm
 hwinfo
 htop
 iotop

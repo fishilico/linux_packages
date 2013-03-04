@@ -1,5 +1,8 @@
 # Some packages used to do weird things
 
+# User-mode Linux Kernel
+uml_utilities
+
 # Network sniffer
 wireshark-cli
 wireshark-gtk
@@ -24,7 +27,7 @@ chntpw
 
 # ARP spoffing
 # ettercap-T -M arp:remote /192.168.1.99/ /192.168.1.1/ -i wlan0
-ettercap
+!ettercap
 ettercap-gtk
 
 # Java decompiler

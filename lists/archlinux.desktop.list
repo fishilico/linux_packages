@@ -47,6 +47,7 @@ xorg-server
 xorg-xinit
 xorg-server-utils
 xorg-util-macros
+xorg-utils
 xorg-xkb-utils
 xorg-xkill
 xorg-drivers
@@ -68,6 +69,8 @@ ttf-inconsolata
 ttf-liberation
 ttf-ms-fonts
 ttf-ubuntu-font-family
+xorg-fonts-100dpi
+xorg-fonts-75dpi
 xorg-fonts-type1
 
 # Some tools
@@ -136,6 +139,9 @@ libdvdcss
 timidity++
 # GNU Flash movie player
 gnash-common
+
+# Music Player Daemon
+ario
 mpd
 mpc
 ncmpc
@@ -143,6 +149,12 @@ ncmpc
 # PulseAudio GTK interface
 pavucontrol
 paprefs
+
+# Mount MTP devices
+mtpfs
+
+# ALSA-OSS layer to have /dev/dsp
+alsa-oss
 
 # Internet
 # Firefox with modules: AdBlockPlus, Firebug, Ghostery, Modify Headers, Quick Proxy, Web Developer
@@ -182,6 +194,7 @@ scite
 anjuta
 bluefish
 eclipse
+geany
 netbeans
 ulipad
 
@@ -191,12 +204,15 @@ kile
 kdegraphics-okular
 texmaker
 a2ps
+# LaTex to HTML
+hevea
 
 # LibreOffice
 libreoffice
-libreoffice-fr
 libreoffice-en-GB
 libreoffice-en-US
+libreoffice-fr
+libreoffice-extension-languagetool
 !libreoffice-kde4
 !libreoffice-langpack
 !libreoffice-postgresql-connector
@@ -204,12 +220,14 @@ libreoffice-en-US
 !libreoffice-sdk-doc
 # Dictionnaries
 hunspell
-hunspell-fr
+hunspell-de
 hunspell-en
+hunspell-fr
 # Style checking
 hyphen
-hyphen-fr
+hyphen-de
 hyphen-en
+hyphen-fr
 # Thesaurus library
 libmythes
 mythes-de
@@ -236,6 +254,9 @@ wine_gecko
 winetricks
 lib32-libxml2
 lib32-mpg123
+
+# Laptop mode
+laptop-mode-tools
 
 # Dropbox
 dropbox

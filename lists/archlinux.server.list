@@ -32,10 +32,12 @@ phpmyadmin
 # PostgreSQL
 postgresql
 phppgadmin
+pgadmin3
 
 # Python
 mod_wsgi
 django
+python2-psycopg2
 
 # File sharing
 vsftpd
