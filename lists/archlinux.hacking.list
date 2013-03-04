@@ -1,0 +1,36 @@
+# Some packages used to do weird things
+
+# Network sniffer
+wireshark-cli
+wireshark-gtk
+
+# Web Application Attack and Audit Framework
+w3af
+
+# SQL injection explorer
+sqlmap
+
+# Metasploit
+metasploit
+
+# Purely passive TCP/IP traffic fingerprinting tool
+p0f
+
+# Wifi
+kismet
+
+# Change Windows password
+chntpw
+
+# ARP spoffing
+# ettercap-T -M arp:remote /192.168.1.99/ /192.168.1.1/ -i wlan0
+ettercap
+ettercap-gtk
+
+# Java decompiler
+jad
+jd-gui
+
+# C decompiler (because IDA doesn't have any packages)
+recstudio
+

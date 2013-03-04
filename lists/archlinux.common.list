@@ -7,8 +7,8 @@ base
 yaourt
 namcap
 
-# Old networking toolset (ifconfig, route, ...)
-net-tools
+# Pacman tools
+expac
 
 # Cron
 !cronie
@@ -21,3 +21,82 @@ grub-bios
 
 # Root access
 sudo
+
+# Logs
+syslog-ng
+
+# Swiss army knife, very useful when glibc update failed...
+busybox
+
+# Shell enhancement
+bash-completion
+zsh
+diffstat
+rlwrap
+
+# Terminal multiplexor
+screen
+tmux
+
+# Text editors
+ed
+emacs
+vim
+
+# Networking
+curl
+dnsmasq
+gnu-netcat
+iptables
+lftp
+links
+mutt
+nmap
+socat
+tcpdump
+wget
+
+# Network time sync
+# config /etc/ntp.conf : restrict default nomodify nopeer noquery
+ntp
+
+# Old networking toolset (ifconfig, route, ...)
+net-tools
+traceroute
+
+# System tools
+hddtemp
+hwinfo
+htop
+iotop
+lshw
+mtools
+ntop
+powertop
+sdparm
+strace
+
+# Mailing
+!esmtp
+!procmail
+postfix
+
+# Archives
+cpio
+p7zip
+rpmextract
+unrar
+unzip
+zip
+
+# LDAP
+openldap
+
+# Colors for logs other things
+ccze
+colordiff
+most
+pacman-color
+
+# Others
+dos2unix

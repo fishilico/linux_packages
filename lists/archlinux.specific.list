@@ -1,0 +1,9 @@
+# Specific hardware on my machines requires some packages
+
+# Canon Pixma MP140 CUPS driver
+cups-canon-3.00
+scangearmp-mp140
+
+# SD card reader (kernel module)
+dkms
+dkms-rts_bpp

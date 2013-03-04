@@ -1,0 +1,85 @@
+# List of development packages for ArchLinux
+
+# Base tools (GCC, Make, ...)
+base-devel
+# Use multilib to do 32-bits compiling on 64-bits machine
+multilib-devel
+
+# C++ libraries
+boost-build
+crypto++
+v8
+
+# Perl
+perl
+perl-uri
+
+# Python
+python
+pygtk
+pylint
+3to2
+python-distribute
+python-pip
+python2-distribute
+python2-pip
+python2-unittest2
+python2-virtualenv
+
+# CMake
+cmake
+
+# Code documentation
+doxygen
+
+# Versioning subsystem
+subversion
+git
+mercurial
+
+# Unit tests
+junit
+apache-ant
+
+# Java
+jdk7-openjdk
+icedtea-web
+!java-environment
+!java-runtime
+
+# SQLite administration
+sqlitebrowser
+
+# SciLab
+scilab
+animal
+gcc-fortran-multilib
+
+# Proof environment
+coq
+
+# Debugger
+gdb
+ddd
+
+# Calculus
+maxima
+wxmaxima
+
+# Objective Caml
+ocaml
+
+# Bug report
+#bug-buddy
+
+# ASM 8086 compiler and rewrite of NASM
+#bin86
+#yasm
+
+# TCL window toolkit
+#tk
+
+
+# Open Computer Vision and 3D library
+irrlicht
+opencv

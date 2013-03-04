@@ -1,5 +1,270 @@
 # List of common packages for an ArchLinux desktop system
 
-# Wireless support
-wpa_actiond
-wireless_tools
+# extfs, NTFS disks and other management utilities
+e2fsprogs
+gparted
+ntfs-3g
+ntfsprogs
+
+# Graphical SU
+gksu
+
+# Printer
+cups
+
+# MS Outlook .pst library
+#libpst
+
+# System beep
+beep
+
+# Crypto
+truecrypt
+
+# Serial port
+minicom
+
+# mp3-ogg converter
+mp32ogg
+
+# Battery monitoring
+acpi
+
+# Live USB key
+unetbootin
+
+# SSH remote mounting
+sshfs
+
+# IRC client
+irssi
+
+# News (NNTP) client
+slrn
+
+# X Window server
+xorg-server
+xorg-xinit
+xorg-server-utils
+xorg-util-macros
+xorg-xkb-utils
+xorg-xkill
+xorg-drivers
+xf86-video-ati
+xf86-input-synaptics
+xf86-video-vesa
+xf86-video-fbdev
+
+# Fonts
+artwiz-fonts
+font-bh-ttf
+font-bitstream-speedo
+ttf-bitstream-vera
+ttf-cheapskate
+ttf-dejavu
+ttf-droid
+ttf-freefont
+ttf-inconsolata
+ttf-liberation
+ttf-ms-fonts
+ttf-ubuntu-font-family
+xorg-fonts-type1
+
+# Some tools
+xsensors
+
+# Display
+xorg-twm
+xterm
+mesa
+mesa-demos
+arandr
+
+# GNOME
+gnome
+gnome-power-manager
+network-manager-applet
+networkmanager-openvpn
+gnome-sharp
+gnome-mag
+gok
+gtkhtml4
+gnome-extra
+#!aisleriot
+#!eog-plugins
+#!gnome-color-manager
+#!gnome-contacts
+#!gnome-documents
+#!sushi
+#!tracker
+
+# GnomeVFS
+gvfs
+gvfs-gphoto2
+gvfs-smb
+
+# Screensaver
+gnome-screensaver
+xscreensaver
+
+# Startup manager
+slim
+
+# XFCE
+xfce4
+xfce4-goodies
+gamin
+glade
+xfce4-panel
+xlockmore
+fortune-mod
+
+# Multimedia
+vlc
+mplayer
+mencoder
+easytag
+alsa-utils
+audacity
+gstreamer0.10-plugins
+gtkpod
+ifuse
+gvfs-afc
+phonon-vlc
+!phonon-backend
+libdvdcss
+timidity++
+# GNU Flash movie player
+gnash-common
+mpd
+mpc
+ncmpc
+
+# PulseAudio GTK interface
+pavucontrol
+paprefs
+
+# Internet
+# Firefox with modules: AdBlockPlus, Firebug, Ghostery, Modify Headers, Quick Proxy, Web Developer
+firefox
+firefox-i18n-fr
+chromium
+opera
+# Thunderbird with module ImportExportTools
+# (http://nic-nac-project.de/~kaosmos/mboximport-en.html)
+thunderbird
+thunderbird-i18n-fr
+!evolution
+# Flash plugin, set dom.ipc.plugins.enabled=true in about:config
+flashplugin
+!gnash-gtk
+gftp
+
+# Imaging
+gimp
+inkscape
+xsane
+xsane-gimp
+uniconvertor
+python-numpy
+python2-numpy
+gocr
+dia
+gnuplot
+
+# Text editor
+kdebase-kwrite
+gedit
+gedit-plugins
+scite
+
+# Integrated Development Environment (IDE)
+anjuta
+bluefish
+eclipse
+netbeans
+ulipad
+
+# LaTeX
+texlive-most
+kile
+kdegraphics-okular
+texmaker
+a2ps
+
+# LibreOffice
+libreoffice
+libreoffice-fr
+libreoffice-en-GB
+libreoffice-en-US
+!libreoffice-kde4
+!libreoffice-langpack
+!libreoffice-postgresql-connector
+!libreoffice-sdk
+!libreoffice-sdk-doc
+# Dictionnaries
+hunspell
+hunspell-fr
+hunspell-en
+# Style checking
+hyphen
+hyphen-fr
+hyphen-en
+# Thesaurus library
+libmythes
+mythes-de
+mythes-en
+mythes-fr
+# Grammar
+link-grammar
+
+# QEmu
+qemu
+!qemu-kvm
+
+# CD recorder
+k3b
+
+# Graphical diff
+fldiff
+meld
+
+# Wine
+# In winetricks: mono210 (!vb6run, !vcrun6)
+wine
+wine_gecko
+winetricks
+lib32-libxml2
+lib32-mpg123
+
+# Dropbox
+dropbox
+thunar-dropbox
+
+# Skype
+skype
+lib32-v4l-utils
+lib32-libcanberra
+lib32-libcanberra-pulse
+
+# The Onion Router
+privoxy
+tor
+vidalia
+
+# Some clients
+xchat
+putty
+google-talkplugin
+# Does google-talkplugin(AUR) need libnotify pulseaudio lib32-libpulseg ?
+
+# Other fun/useful software:
+
+# Phone connection
+wammu
+# File cleaner
+bleachbit
+# Youtube
+youtube-dl
+# View project evolution
+gource

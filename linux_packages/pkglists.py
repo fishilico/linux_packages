@@ -70,7 +70,7 @@ def expand_deps(pkglist, get_deps, get_real_package=None):
     while new_pkgs:
         # Get deps of each package in new_pkgs and fill next_new_pkgs
         next_new_pkgs = set()
-        for pkg in new_pkgs:
+        for pkg in list(new_pkgs):
             if get_real_package:
                 real_pkg = get_real_package(pkg)
                 if real_pkg and real_pkg != pkg:

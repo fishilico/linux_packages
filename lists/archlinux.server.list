@@ -1,0 +1,52 @@
+# Packages for an ArchLinux server
+
+# Apache
+apache
+
+# PHP and extensions
+php
+php-apache
+php-apc
+!php-curl
+php-gd
+php-imagick
+php-mcrypt
+php-memcache
+php-memcached
+php-pear
+php-pgsql
+php-sqlite
+smarty
+xdebug
+
+# Cache
+memcached
+
+# Node.js interpreter
+nodejs
+
+# MySQL
+mysql
+phpmyadmin
+
+# PostgreSQL
+postgresql
+phppgadmin
+
+# Python
+mod_wsgi
+django
+
+# File sharing
+vsftpd
+samba
+
+# DNS
+bind
+
+# SSH
+openssh
+
+# Music and multimedia (UPnP)
+mpd
+ushare
