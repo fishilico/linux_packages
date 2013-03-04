@@ -4,7 +4,7 @@
 # Linux package management tool
 # @author: Nicolas Iooss
 
-from linux_packages import LinuxSystem, load_packages_from_lists
+from linux_packages import LinuxSystem, load_packages_from_lists, shrink_deps
 import sys
 
 linsys = LinuxSystem()
@@ -19,7 +19,7 @@ if linsys.sysname == 'archlinux':
         'hacking',
         'server',
         'specific',
-        'wireless'
+        'wireless',
     ]
 else:
     print("Unsupported system %s" % linsys.sysname)
@@ -32,13 +32,14 @@ installedpkgs = linsys.installed_packages
 listpkgs = load_packages_from_lists('lists', linsys.sysname, listfiles)
 listpkgs = linsys.expand_pkglist(listpkgs)
 
+
 # Output
 print()
 print("Not yet installed and uninstalled packages:")
-pkgs = listpkgs - installedpkgs
+pkgs = shrink_deps(listpkgs - installedpkgs, linsys.get_deps)
 print('\n'.join(sorted(list(pkgs))))
 
 print()
 print("Packages not yet recorded in a list:")
-pkgs = installedpkgs - listpkgs
+pkgs = shrink_deps(installedpkgs - listpkgs, linsys.get_deps)
 print('\n'.join(sorted(list(pkgs))))

@@ -83,3 +83,11 @@ def expand_deps(pkglist, get_deps, get_real_package=None):
         new_pkgs = next_new_pkgs
         current_pkglist |= new_pkgs
     return current_pkglist
+
+
+def shrink_deps(pkglist, get_deps):
+    """Shrink package list by removing explicit dependencies"""
+    pkgs = pkglist
+    for pkg in list(pkglist):
+        pkgs -= get_deps(pkg)
+    return pkgs
