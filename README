@@ -1,0 +1,6 @@
+Linux-Packages
+==============
+
+This project aims to simplify setup of a new Linux system. It provides a simple
+way of managing an human-readable package list and keep this list up-to-date
+among several systems.
