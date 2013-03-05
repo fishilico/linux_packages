@@ -2,9 +2,10 @@
 
 # Base tools (GCC, Make, ...)
 base-devel
+clang
 # Use multilib to do 32-bits compiling on 64-bits machine
 multilib-devel
-clang
+mingw32-gcc
 
 # C++ libraries
 boost-build
@@ -41,7 +42,7 @@ mercurial
 
 # Unit tests
 junit
-apache-ant
+#apache-ant
 
 # Java
 jdk7-openjdk
@@ -53,9 +54,9 @@ icedtea-web-java7
 sqlitebrowser
 
 # SciLab
-scilab
-animal
-gcc-fortran-multilib
+#scilab
+#animal
+#gcc-fortran-multilib
 
 # Proof environment
 coq
@@ -81,6 +82,8 @@ bin86
 # TCL window toolkit
 #tk
 
+# Kernel headers
+linux-headers
 
 # Open Computer Vision and 3D library
 irrlicht

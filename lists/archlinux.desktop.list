@@ -5,6 +5,8 @@ e2fsprogs
 gparted
 ntfs-3g
 ntfsprogs
+dosfstools
+gpart
 
 # Graphical SU
 gksu
@@ -42,7 +44,11 @@ irssi
 # News (NNTP) client
 slrn
 
+# For graphical Git interface
+tk
+
 # X Window server
+xorg
 xorg-server
 xorg-xinit
 xorg-server-utils
@@ -83,14 +89,17 @@ mesa
 mesa-demos
 arandr
 
+# Compizconfig Settings Manager
+ccsm
+
 # GNOME
 gnome
 gnome-power-manager
 network-manager-applet
 networkmanager-openvpn
-gnome-sharp
-gnome-mag
-gok
+#gnome-sharp
+#gnome-mag
+#gok
 gtkhtml4
 gnome-extra
 #!aisleriot
@@ -137,8 +146,9 @@ phonon-vlc
 !phonon-backend
 libdvdcss
 timidity++
+banshee
 # GNU Flash movie player
-gnash-common
+#gnash-common
 
 # Music Player Daemon
 ario
@@ -251,6 +261,7 @@ meld
 # In winetricks: mono210 (!vb6run, !vcrun6)
 wine
 wine_gecko
+wine-mono
 winetricks
 lib32-libxml2
 lib32-mpg123
@@ -275,8 +286,8 @@ vidalia
 
 # Some clients
 xchat
-putty
-google-talkplugin
+#putty
+#google-talkplugin
 # Does google-talkplugin(AUR) need libnotify pulseaudio lib32-libpulseg ?
 
 # Other fun/useful software:
