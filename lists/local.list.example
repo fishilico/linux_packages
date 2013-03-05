@@ -1,0 +1,9 @@
+# List of files to use
+@common
+@desktop
+@devel
+@games
+@hacking
+@server
+@specific
+@wireless

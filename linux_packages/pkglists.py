@@ -4,9 +4,6 @@
 # Manage package list files
 # @author: Nicolas Iooss
 
-import os.path
-
-
 def yield_packages(filename):
     """Yield a package names from a filename"""
     for line in open(filename, 'r'):
@@ -20,20 +17,6 @@ def yield_packages(filename):
         # Yield non-empty lines, which are package names
         if line:
             yield line
-
-
-def yield_packages_from_pattern_files(filelist, path_pattern=None):
-    """Yield a package names from a generated filenames list"""
-    for file in filelist:
-        filename = (path_pattern % file) if path_pattern else file
-        for package in yield_packages(filename):
-            yield package
-
-
-def load_packages_from_lists(listdirpath, sysname, files):
-    """Retrieve package names from list names in a directory"""
-    pattern = os.path.join(listdirpath, sysname + '.%s.list')
-    return yield_packages_from_pattern_files(files, pattern)
 
 
 def expand_groups(pkglist, get_group_packages):
