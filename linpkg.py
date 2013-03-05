@@ -34,16 +34,22 @@ for localline in yield_packages(LOCALLIST):
 # Expand list
 listpkgs = linsys.expand_pkglist(listpkgs)
 
-# Get installed packages
-installedpkgs = linsys.installed_packages
+# Compute diffs with installed packages
+uninstalled_pkgs = listpkgs - linsys.installed_packages
+installed_pkgs = linsys.installed_packages - listpkgs
 
 # Output
-print()
-print("Not yet installed and uninstalled packages:")
-pkgs = shrink_deps(listpkgs - installedpkgs, linsys.get_deps)
-print('\n'.join(sorted(list(pkgs))))
+if uninstalled_pkgs:
+    print()
+    print("Not yet installed and uninstalled packages:")
+    pkgs = shrink_deps(uninstalled_pkgs, linsys.get_deps)
+    print('\n'.join(sorted(list(pkgs))))
 
-print()
-print("Packages not yet recorded in a list:")
-pkgs = shrink_deps(installedpkgs - listpkgs, linsys.get_deps)
-print('\n'.join(sorted(list(pkgs))))
+if installed_pkgs:
+    print()
+    print("Packages not yet recorded in a list:")
+    pkgs = shrink_deps(installed_pkgs, linsys.get_deps)
+    print('\n'.join(sorted(list(pkgs))))
+
+if not uninstalled_pkgs and not installed_pkgs:
+    print("Everything is up to date :)")
