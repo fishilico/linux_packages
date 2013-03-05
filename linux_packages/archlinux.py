@@ -39,13 +39,23 @@ def get_installed_virtual_packets():
     """Get a dict of virtual packets"""
     packages=dict()
     for line in tools.process_output('expac', '%n;%P'):
-        if line[-1] == ';':
-            pkg = line[0:-1]
-            packages[pkg] = pkg
-        else:
-            real, virt = line.split(';', 1)
-            packages[real] = real
-            for vpkg in virt.split(' '):
+        real, virt = line.split(';', 1)
+        # Debug some weird things in package system..
+        #if real in packages:
+        #    print("Warning: package %s is also provided by %s" %
+        #        (real, packages[real]))
+        packages[real] = real
+        for vpkg in virt.split(' '):
+            if not vpkg:
+                continue
+            if vpkg in packages and real != packages[vpkg]:
+                # This warning is normal for ttf-font and libreoffice-langpack
+                # If this was a serious issue, package manager should have put
+                # conflict parameter in packets which provide the same thing.
+                #print("Warning: %s and %s both provide %s" %
+                #    (real, packages[vpkg], vpkg))
+                pass
+            else:
                 packages[vpkg] = real
     return packages
 
