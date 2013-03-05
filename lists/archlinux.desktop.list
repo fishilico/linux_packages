@@ -275,9 +275,7 @@ thunar-dropbox
 
 # Skype
 skype
-lib32-v4l-utils
-lib32-libcanberra
-lib32-libcanberra-pulse
+lib32-libpulse
 
 # The Onion Router
 privoxy
