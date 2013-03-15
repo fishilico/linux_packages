@@ -46,6 +46,7 @@ vim
 # Networking
 curl
 dnsmasq
+dnsutils
 gnu-netcat
 iptables
 lftp

@@ -36,7 +36,7 @@ pgadmin3
 
 # Python
 mod_wsgi
-django
+python2-django
 python2-psycopg2
 
 # File sharing
