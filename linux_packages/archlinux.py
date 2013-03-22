@@ -37,7 +37,7 @@ def get_group_packages(group):
 
 def get_installed_virtual_packets():
     """Get a dict of virtual packets"""
-    packages=dict()
+    packages = dict()
     for line in tools.process_output('expac', '%n;%P'):
         real, virt = line.split(';', 1)
         # Debug some weird things in package system..

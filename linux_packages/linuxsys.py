@@ -4,11 +4,14 @@
 # Linux system management
 # @author: Nicolas Iooss
 
+import logging
 import os.path
 import sys
 
 from .pkglists import expand_groups, expand_deps
 from .tools import object_call_once_and_cache, object_call_indexed_value
+
+logger = logging.getLogger(__name__)
 
 
 class UnsupportedSystem(Exception):
@@ -21,10 +24,26 @@ class UnimplementedCall(Exception):
 
 def autodetect_sysname():
     """Autodetect system type by analysing files"""
-    if os.path.exists('/usr/bin/pacman'):
+    # Find OS ID from os-release, if this file exists
+    if os.path.exists('/etc/os-release'):
+        known_os_id = {
+            'arch': 'archlinux',
+            'debian': 'debian',
+        }
+        with open('/etc/os-release', 'r') as os_file:
+            for line in os_file:
+                if line.startswith('ID='):
+                    os_id = line[3:].strip()
+                    if os_id in known_os_id:
+                        return known_os_id[os_id]
+                    else:
+                        logger.warn("Unknwon os-release ID %s" % os_id)
+    if os.path.exists('/etc/arch-release'):
         return 'archlinux'
-    elif os.path.exists('/usr/bin/apt-get'):
+    elif os.path.exists('/etc/debian_version'):
         return 'debian'
+    elif os.path.exists('/etc/gentoo-release'):
+        return 'gentoo'
     raise UnsupportedSystem("System autodetection failed")
 
 

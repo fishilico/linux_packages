@@ -4,6 +4,7 @@
 # Manage package list files
 # @author: Nicolas Iooss
 
+
 def yield_packages(filename):
     """Yield a package names from a filename"""
     for line in open(filename, 'r'):
