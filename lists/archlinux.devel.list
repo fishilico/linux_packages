@@ -21,11 +21,13 @@ python
 pygtk
 pylint
 3to2
+flake8
 python-distribute
 python-pip
 python-pyopenssl
 python2-distribute
 python2-pip
+python2-flake8
 python2-unittest2
 python2-virtualenv
 
