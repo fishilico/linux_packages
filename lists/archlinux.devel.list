@@ -9,8 +9,6 @@ mingw32-gcc
 
 # C++ libraries
 boost-build
-crypto++
-v8
 
 # Perl
 perl
@@ -68,8 +66,8 @@ gdb
 ddd
 
 # Calculus
-maxima
-wxmaxima
+#maxima
+#wxmaxima
 
 # Objective Caml
 ocaml
@@ -78,7 +76,7 @@ ocaml
 #bug-buddy
 
 # ASM 8086 compiler and rewrite of NASM
-bin86
+#bin86
 #yasm
 
 # TCL window toolkit
@@ -88,5 +86,5 @@ bin86
 linux-headers
 
 # Open Computer Vision and 3D library
-irrlicht
+#irrlicht
 opencv

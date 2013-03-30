@@ -97,18 +97,13 @@ gnome
 gnome-power-manager
 network-manager-applet
 networkmanager-openvpn
-#gnome-sharp
-#gnome-mag
-#gok
 gtkhtml4
 gnome-extra
-#!aisleriot
-#!eog-plugins
-#!gnome-color-manager
-#!gnome-contacts
-#!gnome-documents
-#!sushi
-#!tracker
+!gnome-color-manager
+!gnome-contacts
+!gnome-documents
+!sushi
+!tracker
 
 # GnomeVFS
 gvfs
@@ -207,7 +202,7 @@ eclipse
 geany
 netbeans
 ninja-ide
-ulipad
+#ulipad
 
 # LaTeX
 texlive-most
