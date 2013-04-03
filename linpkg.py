@@ -13,12 +13,12 @@ print("Autodetected system %s" % linsys.sysname)
 
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
 LISTDIR = os.path.join(BASEDIR, 'lists')
-LOCALLIST = os.path.join(LISTDIR, 'local.list')
+LOCALLIST = os.path.join(BASEDIR, 'local.list')
 PATTERNLIST = os.path.join(LISTDIR, linsys.sysname + '.%s.list')
 
 if not os.path.exists(LOCALLIST):
     print("Please create a local file named '%s'" % LOCALLIST)
-    print("Read '%s.example' for an example of such a file")
+    print("Read '%s.example' for an example of such a file" % LOCALLIST)
     sys.exit(1)
 
 # Read local list file
