@@ -40,13 +40,13 @@ installed_pkgs = linsys.installed_packages - listpkgs
 
 # Output
 if uninstalled_pkgs:
-    print()
+    print("")
     print("Not yet installed and uninstalled packages:")
     pkgs = shrink_deps(uninstalled_pkgs, linsys.get_deps)
     print('\n'.join(sorted(list(pkgs))))
 
 if installed_pkgs:
-    print()
+    print("")
     print("Packages not yet recorded in a list:")
     pkgs = shrink_deps(installed_pkgs, linsys.get_deps)
     print('\n'.join(sorted(list(pkgs))))
