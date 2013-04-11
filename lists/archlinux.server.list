@@ -26,7 +26,7 @@ memcached
 nodejs
 
 # MySQL
-mysql
+mariadb
 phpmyadmin
 
 # PostgreSQL

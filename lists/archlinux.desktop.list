@@ -162,7 +162,7 @@ mtpfs
 alsa-oss
 
 # Internet
-# Firefox with modules: AdBlockPlus, Firebug, Ghostery, Modify Headers, Quick Proxy, Web Developer
+# Firefox with modules: AdBlockPlus, Firebug, Ghostery, Modify Headers, Quick Proxy, Web Developer, IPvFox
 firefox
 firefox-i18n-fr
 chromium

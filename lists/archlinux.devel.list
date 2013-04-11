@@ -16,6 +16,7 @@ perl-uri
 
 # Python
 python
+pypy
 pygtk
 pylint
 3to2
