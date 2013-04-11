@@ -40,7 +40,7 @@ def expand_groups(pkglist, get_group_packages):
                 new_pkgs |= packages
             else:
                 new_pkgs.add(pkg)
-    return new_pkgs - deleted_pkgs
+    return new_pkgs - deleted_pkgs, deleted_pkgs
 
 
 def expand_deps(pkglist, get_deps, get_real_package=None):

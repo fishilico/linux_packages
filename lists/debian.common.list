@@ -1,0 +1,79 @@
+# List of common packages among every installation of Debian
+
+# Debootstrap may not install binutils, but it's useful for strings
+binutils
+
+# Base tools
+less
+lsb-release
+sysv-rc-conf
+zip
+
+# Root access
+sudo
+
+# Logs
+#syslog-ng
+rsyslog
+
+# Swiss army knife
+busybox
+
+# Shell enhancement
+bash-completion
+zsh
+diffstat
+rlwrap
+
+# Terminal multiplexor
+screen
+#tmux
+
+# Text editors
+#emacs
+vim
+
+# Networking
+curl
+dnsutils
+netcat
+iptables-persistent
+links
+mutt
+rsync
+socat
+ssh
+tcpdump
+wget
+whois
+
+# Network time sync
+# config /etc/ntp.conf : restrict default nomodify nopeer noquery
+ntp
+
+# Old networking toolset (ifconfig, route, ...)
+net-tools
+traceroute
+
+# System tools
+htop
+lshw
+lsof
+strace
+
+# Mailing
+postfix
+
+# Colors for logs other things
+ccze
+colordiff
+most
+
+# Others
+dos2unix
+
+# Some base things which are not required nor important
+apt-listchanges
+apt-utils
+ca-certificates
+file

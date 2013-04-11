@@ -68,7 +68,7 @@ def get_real_package(package):
 
 
 def get_installed_deps():
-    """Get all dependencies of installed packages"""
+    """Get all dependencies of all installed packages"""
     deps = dict()
     for pkgline in tools.process_output('expac', '%n: %E'):
         pkg, dependent_pkg = pkgline.split(':', 1)

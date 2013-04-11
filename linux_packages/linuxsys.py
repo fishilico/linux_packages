@@ -146,6 +146,6 @@ class LinuxSystem(object):
     def expand_pkglist(self, packages):
         """Expand a package list for this system"""
         # Expand groups
-        packages = expand_groups(packages, self.get_group_packages)
+        packages, deleted_pkgs = expand_groups(packages, self.get_group_packages)
         packages = expand_deps(packages, self.get_deps, self.get_real_package)
-        return packages
+        return packages - deleted_pkgs
