@@ -1,0 +1,26 @@
+# Debian packages for a non-virtual machine
+
+# Linux
+grub2
+linux-image-amd64
+firmware-linux-free
+#dkms
+
+# Hardware tools
+pciutils
+usbutils
+
+# Keyboard configuration
+console-common
+console-data
+console-setup
+console-tools
+
+# Console mouse
+gpm
+
+# Network (wired and wireless) configuration
+wicd-cli
+wicd-curses
+rfkill
+#libglib2.0-data ?

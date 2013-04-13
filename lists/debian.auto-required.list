@@ -27,7 +27,6 @@ libc-bin
 libcomerr2
 libgcc1
 liblocale-gettext-perl
-liblzma2
 liblzma5
 libmount1
 libncurses5

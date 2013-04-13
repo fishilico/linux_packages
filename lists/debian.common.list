@@ -8,6 +8,7 @@ less
 lsb-release
 sysv-rc-conf
 zip
+unzip
 
 # Root access
 sudo
@@ -17,7 +18,7 @@ sudo
 rsyslog
 
 # Swiss army knife
-busybox
+busybox-static
 
 # Shell enhancement
 bash-completion
@@ -36,14 +37,20 @@ vim
 # Networking
 curl
 dnsutils
+ftp
 netcat
 iptables-persistent
+lftp
 links
 mutt
+nfs-common
+openssh-blacklist
+openssh-blacklist-extra
 rsync
 socat
 ssh
 tcpdump
+telnet
 wget
 whois
 
@@ -59,7 +66,9 @@ traceroute
 htop
 lshw
 lsof
+psmisc
 strace
+time
 
 # Mailing
 postfix
@@ -72,8 +81,15 @@ most
 # Others
 dos2unix
 
-# Some base things which are not required nor important
+# Some standard things which are not required nor important
 apt-listchanges
 apt-utils
+bc
 ca-certificates
 file
+geoip-database
+iso-codes
+m4
+mlocate
+python-central
+shared-mime-info

@@ -1,0 +1,13 @@
+# List of development packages for Debian
+
+# Compiling
+build-essential
+cmake
+fakeroot
+
+# Kernel modules
+dkms
+linux-headers-amd64
+
+# Version control system
+git

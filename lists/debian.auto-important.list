@@ -28,7 +28,6 @@ isc-dhcp-common
 kmod
 libapt-inst1.5
 libapt-pkg4.12
-libboost-iostreams1.42.0
 libboost-iostreams1.49.0
 libbz2-1.0
 libcwidget3
@@ -42,7 +41,6 @@ libpipeline1
 libpopt0
 libprocps0
 libreadline6
-libssl0.9.8
 libssl1.0.0
 libstdc++6
 libudev0
@@ -56,6 +54,7 @@ nano
 netbase
 netcat-traditional
 net-tools
+nfacct
 procps
 readline-common
 rsyslog
