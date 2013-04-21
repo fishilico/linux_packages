@@ -7,8 +7,16 @@ firmware-linux-free
 #dkms
 
 # Hardware tools
+acpi
 pciutils
 usbutils
+i2c-tools
+lm-sensors
+read-edid
+hwdata
+hdparm
+sdparm
+vbetool
 
 # Keyboard configuration
 console-common
@@ -20,7 +28,13 @@ console-tools
 gpm
 
 # Network (wired and wireless) configuration
-wicd-cli
-wicd-curses
+iw
 rfkill
+wireless-tools
+wpasupplicant
 #libglib2.0-data ?
+
+# Drive disk
+dosfstools
+ntfs-3g
+eject

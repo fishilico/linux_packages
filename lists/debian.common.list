@@ -80,6 +80,8 @@ most
 
 # Others
 dos2unix
+fortunes
+fortune-mod
 
 # Some standard things which are not required nor important
 apt-listchanges

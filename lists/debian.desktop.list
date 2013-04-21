@@ -1,0 +1,108 @@
+# List of common packages for a Debian desktop system
+
+# X Window server
+xorg
+xinput
+xscreensaver
+xserver-xorg
+x11-utils
+
+# Fonts
+fonts-vlgothic
+ttf-bitstream-vera
+ttf-dejavu
+ttf-droid
+ttf-freefont
+ttf-inconsolata
+ttf-liberation
+
+# XFCE
+xfce4
+xfce4-goodies
+xfce4-notifyd
+xfce4-volumed
+desktop-base
+notification-daemon
+librsvg2-common
+libxfce4util-bin
+menu
+tango-icon-theme
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+tumbler
+upower
+xdg-user-dirs
+xfprint4
+xfswitch-plugin
+xfwm4-themes
+
+# LightDM
+lightdm
+gnome-themes-standard
+gtk2-engines
+
+# Applications
+gedit
+gedit-plugins
+gparted
+parted
+
+# Networking
+crda
+iceweasel
+network-manager-gnome
+gnome-keyring
+python-notify
+
+# Other things
+gksu
+gvfs
+lpr
+miscfiles
+xauth
+
+# Icons
+hicolor-icon-theme
+
+# Some tools
+xsensors
+
+# Display
+xterm
+arandr
+
+# Sound
+alsa-base
+alsa-utils
+gnome-control-center
+gstreamer0.10-plugins-good
+gstreamer0.10-plugins-bad
+gstreamer0.10-ffmpeg
+libmtp-runtime
+pulseaudio
+pulseaudio-utils
+rtkit
+
+ffmpeg
+mplayer
+vlc
+vlc-plugin-notify
+vlc-plugin-pulse
+xdg-utils
+
+# MIDI
+freepats
+timidity-daemon
+
+# PulseAudio
+paprefs
+pavucontrol
+pavumeter
+
+# Music Player Daemon
+mpd
+mpc
+ncmpc
+ario
+xfce4-mpc-plugin
