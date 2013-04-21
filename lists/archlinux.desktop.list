@@ -105,6 +105,9 @@ gnome-extra
 !sushi
 !tracker
 
+# Useful tool to configure advanced settings
+gnome-tweak-tool
+
 # GnomeVFS
 gvfs
 gvfs-gphoto2
