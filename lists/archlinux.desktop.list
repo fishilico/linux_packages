@@ -99,7 +99,9 @@ network-manager-applet
 networkmanager-openvpn
 gtkhtml4
 gnome-extra
-!gnome-color-manager
+eog-plugins
+gconf-editor
+gnome-control-center
 !gnome-contacts
 !gnome-documents
 !sushi
@@ -118,7 +120,7 @@ gnome-screensaver
 xscreensaver
 
 # Startup manager
-slim
+lightdm-gtk3-greeter
 
 # XFCE
 xfce4
@@ -128,6 +130,7 @@ glade
 xfce4-panel
 xlockmore
 fortune-mod
+polkit-gnome
 
 # Multimedia
 vlc
@@ -251,6 +254,8 @@ qemu
 
 # CD recorder
 k3b
+dvd+rw-tools
+cdrdao
 
 # Graphical diff
 fldiff

@@ -18,7 +18,7 @@ perl-uri
 python
 pypy
 pygtk
-pylint
+python2-pylint
 3to2
 flake8
 python-distribute
