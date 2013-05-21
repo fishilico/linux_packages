@@ -101,14 +101,15 @@ gtkhtml4
 gnome-extra
 eog-plugins
 gconf-editor
-gnome-control-center
+accountsservice
+#gnome-control-center
 !gnome-contacts
 !gnome-documents
 !sushi
 !tracker
 
 # Useful tool to configure advanced settings
-gnome-tweak-tool
+#gnome-tweak-tool
 
 # GnomeVFS
 gvfs
@@ -137,6 +138,7 @@ vlc
 mplayer
 mencoder
 easytag
+alsa-plugins
 alsa-utils
 audacity
 gstreamer0.10-plugins
@@ -158,8 +160,8 @@ mpc
 ncmpc
 
 # PulseAudio GTK interface
-pavucontrol
-paprefs
+#pavucontrol
+#paprefs
 
 # Mount MTP devices
 mtpfs

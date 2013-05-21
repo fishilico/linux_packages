@@ -1,0 +1,8 @@
+# List of packages to install to have a more secure system
+
+# grsecurity
+gradm
+linux-pax-flags
+linux-grsec
+linux-grsec-headers
+pax-utils

@@ -31,6 +31,7 @@ busybox
 # Shell enhancement
 bash-completion
 zsh
+zsh-completions
 diffstat
 rlwrap
 

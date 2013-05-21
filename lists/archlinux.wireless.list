@@ -3,6 +3,5 @@
 iw
 rfkill
 wpa_actiond
-wifi-select
 wireless_tools
 wpa_supplicant_gui

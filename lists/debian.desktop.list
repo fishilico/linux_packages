@@ -39,6 +39,7 @@ xfwm4-themes
 
 # LightDM
 lightdm
+lightdm-gtk3-greeter
 gnome-themes-standard
 gtk2-engines
 
