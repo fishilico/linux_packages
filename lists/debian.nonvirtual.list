@@ -4,7 +4,15 @@
 grub2
 linux-image-amd64
 firmware-linux-free
+firmware-linux-nonfree
 #dkms
+
+# Grsecurity
+# Doc: http://www.howtoforge.com/hardening-the-linux-kernel-with-grsecurity-debian
+gradm2
+kernel-package
+linux-patch-grsecurity2
+linux-source
 
 # Hardware tools
 acpi
