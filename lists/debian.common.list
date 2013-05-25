@@ -47,7 +47,6 @@ iptables-persistent
 lftp
 links
 mutt
-nfs-common
 openssh-blacklist
 openssh-blacklist-extra
 rsync
@@ -76,6 +75,7 @@ time
 
 # Mailing
 postfix
+procmail
 
 # Colors for logs other things
 ccze
