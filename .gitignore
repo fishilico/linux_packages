@@ -28,5 +28,8 @@ pip-log.txt
 # Self-made-config
 /local.list
 
+# Automatically generated files
+/lists/*.auto-*
+
 # Editors
 .*.sw[po]
