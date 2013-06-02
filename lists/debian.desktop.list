@@ -6,6 +6,7 @@ xinput
 xscreensaver
 xserver-xorg
 x11-utils
+rxvt-unicode
 
 # Fonts
 fonts-vlgothic

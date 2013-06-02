@@ -39,6 +39,7 @@ screen
 vim
 
 # Networking
+arping
 curl
 dnsutils
 ftp
@@ -47,11 +48,13 @@ iptables-persistent
 lftp
 links
 mutt
+ndisc6
 openssh-blacklist
 openssh-blacklist-extra
 rsync
 socat
 ssh
+sshfs
 tcpdump
 telnet
 wget
