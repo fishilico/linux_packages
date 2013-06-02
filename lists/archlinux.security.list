@@ -1,6 +1,10 @@
 # List of packages to install to have a more secure system
 
 # grsecurity
+# For Desktop installation, you may want to disable Sysfs restriction, by
+# not setting CONFIG_GRKERNSEC_SYSFS_RESTRICT in kernel configuration.
+# Also, CONFIG_GRKERNSEC_PROC seems to break the session management system
+# (DBus, ConsoleKit, SystemD, ...)
 gradm
 linux-pax-flags
 linux-grsec

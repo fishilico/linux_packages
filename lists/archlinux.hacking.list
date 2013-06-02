@@ -4,6 +4,8 @@
 uml_utilities
 
 # Network sniffer
+# Run "setcap 'CAP_NET_RAW+eip CAP_NET_ADMIN+eip' /usr/bin/dumpcap" to use
+# Wireshark without being root
 wireshark-cli
 wireshark-gtk
 
