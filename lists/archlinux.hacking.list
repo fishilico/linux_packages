@@ -7,6 +7,11 @@ uml_utilities
 wireshark-cli
 wireshark-gtk
 
+# Python sniffer
+scapy
+python2-crypto
+gnuplot-py
+
 # Web Application Attack and Audit Framework
 w3af
 

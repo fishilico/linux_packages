@@ -53,6 +53,7 @@ iptables
 lftp
 links
 mutt
+ndisc6
 nmap
 socat
 tcpdump
