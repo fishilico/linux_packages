@@ -16,14 +16,16 @@ linux-source
 
 # Hardware tools
 acpi
-pciutils
-usbutils
-i2c-tools
-lm-sensors
-read-edid
-hwdata
+hddtemp
 hdparm
+hwdata
+i2c-tools
+iotop
+lm-sensors
+pciutils
+read-edid
 sdparm
+usbutils
 vbetool
 
 # Keyboard configuration

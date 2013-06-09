@@ -21,6 +21,7 @@ ttf-liberation
 xfce4
 xfce4-goodies
 xfce4-notifyd
+xfce4-power-manager
 xfce4-volumed
 desktop-base
 notification-daemon
@@ -110,3 +111,9 @@ mpc
 ncmpc
 ario
 xfce4-mpc-plugin
+
+# Package manager
+synaptic
+
+# Other
+udisks
