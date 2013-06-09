@@ -1,0 +1,30 @@
+# Every Debian package which is either important, required or standard and that
+# is not so useful in common configuration
+
+# NFS packages
+liblockfile-bin
+liblockfile1
+libnfsidmap2
+libtirpc1
+nfs-common
+rpcbind
+
+# Exim
+exim4
+exim4-base
+exim4-config
+exim4-daemon-light
+
+# Other
+bsd-mailx
+db5.1-util
+debian-faq
+doc-debian
+gcc-4.6-base
+libboost-iostreams1.53.0
+libgc1c2
+libgssglue1
+python-reportbug
+reportbug
+w3m
+wamerican
