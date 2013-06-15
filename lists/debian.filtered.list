@@ -15,13 +15,29 @@ exim4-base
 exim4-config
 exim4-daemon-light
 
+# Librairies
+libbind9-60
+libboost-iostreams1.42.0
+libboost-iostreams1.53.0
+libdb4.7
+libdb4.8
+libdns69
+libdns81
+libept1
+libisc62
+libisc83
+liblwres60
+liblzma2
+libssl0.9.8
+libxtables9
+
+
 # Other
 bsd-mailx
 db5.1-util
 debian-faq
 doc-debian
 gcc-4.6-base
-libboost-iostreams1.53.0
 libgc1c2
 libgssglue1
 python-reportbug
