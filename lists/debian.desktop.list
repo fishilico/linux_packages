@@ -115,5 +115,8 @@ xfce4-mpc-plugin
 # Package manager
 synaptic
 
+# Version control
+gitk
+
 # Other
 udisks

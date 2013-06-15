@@ -11,3 +11,7 @@ linux-headers-amd64
 
 # Version control system
 git
+
+# Debugging
+gdb
+libc6-dbg
