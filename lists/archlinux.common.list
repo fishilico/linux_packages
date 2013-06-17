@@ -11,9 +11,8 @@ namcap
 expac
 
 # Cron
-!cronie
+cronie
 !cron
-dcron
 
 # Use GRUB 2, not GRUB
 !grub
@@ -49,12 +48,14 @@ curl
 dnsmasq
 dnsutils
 gnu-netcat
+iftop
 iptables
 lftp
 links
 mutt
 ndisc6
 nmap
+rsync
 socat
 tcpdump
 wget

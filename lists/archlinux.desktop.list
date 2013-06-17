@@ -286,6 +286,7 @@ lib32-libpulse
 # The Onion Router
 privoxy
 tor
+tsocks
 vidalia
 
 # Some clients

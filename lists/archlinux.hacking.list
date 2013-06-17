@@ -1,7 +1,8 @@
 # Some packages used to do weird things
 
-# User-mode Linux Kernel
-uml_utilities
+# Do bridging between interfaces
+bridge-utils
+ebtables
 
 # Network sniffer
 # Run "setcap 'CAP_NET_RAW+eip CAP_NET_ADMIN+eip' /usr/bin/dumpcap" to use
@@ -43,4 +44,3 @@ jd-gui
 
 # C decompiler (because IDA doesn't have any packages)
 recstudio
-
