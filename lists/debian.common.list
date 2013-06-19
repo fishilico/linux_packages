@@ -92,6 +92,7 @@ fortunes
 fortune-mod
 
 # Some standard things which are not required nor important
+apt-listbugs
 apt-listchanges
 apt-utils
 bc
