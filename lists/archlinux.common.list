@@ -14,9 +14,8 @@ expac
 cronie
 !cron
 
-# Use GRUB 2, not GRUB
-!grub
-grub-bios
+# GRUB (GNU GRand Unified Bootloader)
+grub
 
 # Root access
 sudo
@@ -32,6 +31,7 @@ bash-completion
 zsh
 zsh-completions
 diffstat
+lesspipe
 rlwrap
 
 # Terminal multiplexor
