@@ -30,8 +30,10 @@ p0f
 # Wifi
 kismet
 
-# Change Windows password
+# Change Windows password and other password cracking software
 chntpw
+mdcrack
+sipcrack
 
 # ARP spoffing
 # ettercap-T -M arp:remote /192.168.1.99/ /192.168.1.1/ -i wlan0
