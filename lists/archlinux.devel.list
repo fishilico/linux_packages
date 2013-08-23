@@ -92,3 +92,6 @@ linux-headers
 # Open Computer Vision and 3D library
 #irrlicht
 opencv
+
+# Dbus debugging
+d-feet

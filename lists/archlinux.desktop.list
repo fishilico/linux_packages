@@ -168,6 +168,7 @@ mtpfs
 
 # ALSA-OSS layer to have /dev/dsp
 alsa-oss
+lib32-alsa-oss
 
 # Internet
 # Firefox with modules: AdBlockPlus, Firebug, Ghostery, IPvFox, Modify Headers,
@@ -308,3 +309,5 @@ bleachbit
 youtube-dl
 # View project evolution
 gource
+# Traceroute GUI
+mtr-gtk
