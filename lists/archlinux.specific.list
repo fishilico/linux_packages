@@ -5,5 +5,6 @@
 scangearmp-mp140
 
 # SD card reader (kernel module)
+# Run "systemctl enable dkms.service" to automaticaly rebuild DKMS modules when upgrading kernel
 dkms
 dkms-rts_bpp

@@ -114,6 +114,7 @@ accountsservice
 # GnomeVFS
 gvfs
 gvfs-gphoto2
+gvfs-mtp
 gvfs-smb
 
 # Screensaver
@@ -176,7 +177,6 @@ lib32-alsa-oss
 firefox
 firefox-i18n-fr
 chromium
-opera
 profile-sync-daemon
 # Thunderbird with module ImportExportTools
 # (http://nic-nac-project.de/~kaosmos/mboximport-en.html)
@@ -226,7 +226,6 @@ hevea
 
 # LibreOffice
 libreoffice
-libreoffice-en-GB
 libreoffice-en-US
 libreoffice-fr
 libreoffice-extension-languagetool
